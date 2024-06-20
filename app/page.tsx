@@ -207,11 +207,11 @@ export default function Home() {
           </div>
           <div className="mx-auto w-full max-w-sm space-y-2">
             <form className="flex flex-col space-y-2">
-              <Input className="max-w-lg" placeholder="Name" type="text" />
-              <Input className="max-w-lg" placeholder="Email" type="email" />
-              <Textarea className="max-w-lg" placeholder="Message" />
+              <Input className="max-w-lg" placeholder="이름" type="text" />
+              <Input className="max-w-lg" placeholder="이메일" type="email" />
+              <Textarea className="max-w-lg" placeholder="메시지" />
               <Button className="w-full" type="submit">
-                Send Message
+                메시지 보내기
               </Button>
             </form>
           </div>
