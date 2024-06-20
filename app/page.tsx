@@ -28,18 +28,21 @@ export default function Home() {
         <span className="sr-only">정요환의 포트폴리오</span>
       </Link>
       <nav className="ml-auto flex gap-4 sm:gap-6">
-        <Link className="text-sm font-medium hover:underline underline-offset-4" href="#">
-          About
+      <Link className="text-sm font-medium hover:underline underline-offset-4" href="#home">
+          홈
         </Link>
-        <Link className="text-sm font-medium hover:underline underline-offset-4" href="#">
-          Projects
+        <Link className="text-sm font-medium hover:underline underline-offset-4" href="#about">
+          자기소개
         </Link>
-        <Link className="text-sm font-medium hover:underline underline-offset-4" href="#">
-          Contact
+        <Link className="text-sm font-medium hover:underline underline-offset-4" href="#projects">
+          작업물
+        </Link>
+        <Link className="text-sm font-medium hover:underline underline-offset-4" href="#contact">
+          연락
         </Link>
       </nav>
     </header>
-    <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gray-900 text-white flex justify-center">
+    <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gray-900 text-white flex justify-center" id="home">
       <div className="container px-4 md:px-6">
         <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
           <div className="flex flex-col justify-center space-y-4">
@@ -57,15 +60,15 @@ export default function Home() {
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Link
                 className="inline-flex h-10 items-center justify-center rounded-md bg-[#ffd966] px-8 text-sm font-medium text-black shadow transition-colors hover:bg-[#f1c232] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#4F46E5] disabled:pointer-events-none disabled:opacity-50"
-                href="#"
+                href="#projects"
               >
-                View Projects
+                프로젝트 보기
               </Link>
               <Link
-                className="inline-flex h-10 items-center justify-center rounded-md border border-gray-200 bg-white px-8 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300 dark:border-gray-800"
-                href="#"
+                className="inline-flex h-10 items-center justify-center rounded-md border border-gray-200 bg-white px-8 text-black font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300 dark:border-gray-800"
+                href="#contact"
               >
-                Contact Me
+                연락하기
               </Link>
             </div>
           </div>
@@ -73,7 +76,7 @@ export default function Home() {
             alt="Hero"
             className="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:order-last lg:aspect-square"
             height="550"
-            src="/game.jpg"
+            src="/Profile.jpg"
             width="550"
           />
         </div>
@@ -154,7 +157,7 @@ export default function Home() {
               <CardContent className="p-4">
                 <h3 className="text-lg font-bold">Team Project 1 - Eutopiness</h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                Touch Cross-Screw Puzzle Adventure Game
+                횡 스크롤 퍼즐 아케이드 게임
                 </p>
               </CardContent>
             </Card>
@@ -184,7 +187,7 @@ export default function Home() {
               <CardContent className="p-4">
                 <h3 className="text-lg font-bold">Grapic Work - Pig Monster</h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                Creative Modeling that embodies a Pig Monster / by Zbrush
+                Pig Monster를 형상화하여 제작한 모델링 / by Zbrush
                 </p>
               </CardContent>
             </Card>
@@ -196,10 +199,10 @@ export default function Home() {
       <div className="container px-4 md:px-6">
         <div className="grid items-center justify-center gap-4 text-center">
           <div className="space-y-3">
-            <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">Get in Touch</h2>
+            <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">연락을 기다립니다!</h2>
             <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-            Do you want to work on the project with me? <br />
-            Feel free to contact me anytime.
+            저와 함께 프로젝트를 참여하지 않으시겠어요? <br />
+            언제든 편하게 연락주세요
             </p>
           </div>
           <div className="mx-auto w-full max-w-sm space-y-2">
@@ -216,14 +219,12 @@ export default function Home() {
       </div>
     </section>
     <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-gray-900 text-white">
-      <p className="text-xs">© 2024 Jane Doe. All rights reserved.</p>
+      <p className="text-xs">© 2024 정요환. All rights reserved.</p>
       <nav className="sm:ml-auto flex gap-4 sm:gap-6">
         <Link className="text-xs hover:underline underline-offset-4" href="#">
-          Privacy
+          맨 위로 가기
         </Link>
-        <Link className="text-xs hover:underline underline-offset-4" href="#">
-          Terms
-        </Link>
+        
       </nav>
     </footer>
   </div>
