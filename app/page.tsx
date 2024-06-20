@@ -25,7 +25,7 @@ export default function Home() {
     <header className="px-4 lg:px-6 h-14 flex items-center bg-gray-900 text-white">
       <Link className="flex items-center justify-center" href="#">
         <PaletteIcon className="h-6 w-6" />
-        <span className="sr-only">Jane Doe&apos;s Portfolio</span>
+        <span className="sr-only">정요환의 포트폴리오</span>
       </Link>
       <nav className="ml-auto flex gap-4 sm:gap-6">
         <Link className="text-sm font-medium hover:underline underline-offset-4" href="#">
@@ -45,16 +45,18 @@ export default function Home() {
           <div className="flex flex-col justify-center space-y-4">
             <div className="space-y-2">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                Crafting Visually Stunning Experiences
+                정요환 / Jeong Yohwan
+              </h1>
+              <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-4xl/none">
+              게임 그래픽 디자이너
               </h1>
               <p className="max-w-[600px] text-gray-300 md:text-xl dark:text-gray-400">
-                Discover the portfolio of Jane Doe, a talented designer who specializes in creating captivating
-                digital experiences.
+                3D와 2D 그래픽 디자인을 전문으로 하고 있는 정요환입니다. 
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Link
-                className="inline-flex h-10 items-center justify-center rounded-md bg-[#6366F1] px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-[#4F46E5] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#4F46E5] disabled:pointer-events-none disabled:opacity-50"
+                className="inline-flex h-10 items-center justify-center rounded-md bg-[#ffd966] px-8 text-sm font-medium text-black shadow transition-colors hover:bg-[#f1c232] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#4F46E5] disabled:pointer-events-none disabled:opacity-50"
                 href="#"
               >
                 View Projects
@@ -71,7 +73,7 @@ export default function Home() {
             alt="Hero"
             className="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:order-last lg:aspect-square"
             height="550"
-            src="/placeholder.svg"
+            src="/game.jpg"
             width="550"
           />
         </div>
@@ -82,28 +84,39 @@ export default function Home() {
         <div className="grid items-center gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[1fr_550px]">
           <div className="flex flex-col justify-center space-y-4">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">About Jane Doe</h2>
-              <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                Jane Doe is a passionate designer with over 8 years of experience in the industry. She specializes in
-                creating visually stunning and user-friendly digital experiences.
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">정요환 / Jeong Yohwan</h2>
+              <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-800">
+                2001.08.21 <br /> jyh010821@naver.com <br /> 010.9400.6965
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-1">
                 <h3 className="text-lg font-bold">Skills</h3>
                 <ul className="space-y-1 text-sm text-gray-500 dark:text-gray-400">
-                  <li>UI/UX Design</li>
-                  <li>Interaction Design</li>
-                  <li>Branding</li>
-                  <li>Motion Design</li>
+                  <li>Photoshop</li>
+                  <li>Substance 3D Painter</li>
+                  <li>3ds MAX</li>
+                  <li>Maya</li>
+                  <li>Zbrush</li>
+                </ul>
+              </div>
+              <div className="space-y-1">
+                <h3 className="text-lg font-bold">Education</h3>
+                <ul className="space-y-1 text-sm text-gray-500 dark:text-gray-400">
+                  <li>서강대학교 미래교육원에 재학 <br /> 2020.03 ~ </li>
                 </ul>
               </div>
               <div className="space-y-1">
                 <h3 className="text-lg font-bold">Experience</h3>
                 <ul className="space-y-1 text-sm text-gray-500 dark:text-gray-400">
-                  <li>8+ years in the industry</li>
-                  <li>Worked with leading tech companies</li>
-                  <li>Awarded for design excellence</li>
+                  <li>게임 제작 프로젝트 참가</li>
+                </ul>
+              </div>
+              <div className="space-y-1">
+                <h3 className="text-lg font-bold">Certification & Duty</h3>
+                <ul className="space-y-1 text-sm text-gray-500 dark:text-gray-400">
+                  <li>1종 보통 운전 면허</li>
+                  <li>육군 병장 만기 전역</li>
                 </ul>
               </div>
             </div>
@@ -112,7 +125,7 @@ export default function Home() {
             alt="About"
             className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
             height="310"
-            src="/placeholder.svg"
+            src="/Adobe.jpg"
             width="550"
           />
         </div>
@@ -123,9 +136,9 @@ export default function Home() {
         <div className="space-y-12">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Featured Projects</h2>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Projects & Graphic Work</h2>
               <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                Explore a selection of Jane Doe&apos;s most captivating design projects.
+                참여 프로젝트 및 그래픽 작업물
               </p>
             </div>
           </div>
@@ -135,13 +148,13 @@ export default function Home() {
                 alt="Project 1"
                 className="mx-auto aspect-video overflow-hidden rounded-t-xl object-cover object-center sm:w-full"
                 height="310"
-                src="/placeholder.svg"
+                src="/Eutopiness.PNG"
                 width="550"
               />
               <CardContent className="p-4">
-                <h3 className="text-lg font-bold">Project 1</h3>
+                <h3 className="text-lg font-bold">Team Project 1 - Eutopiness</h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  A sleek and modern website design for a leading tech company.
+                Touch Cross-Screw Puzzle Adventure Game
                 </p>
               </CardContent>
             </Card>
@@ -150,13 +163,13 @@ export default function Home() {
                 alt="Project 2"
                 className="mx-auto aspect-video overflow-hidden rounded-t-xl object-cover object-center sm:w-full"
                 height="310"
-                src="/placeholder.svg"
+                src="/Biohunt.jpg"
                 width="550"
               />
               <CardContent className="p-4">
-                <h3 className="text-lg font-bold">Project 2</h3>
+                <h3 className="text-lg font-bold">Team Project 2 - Biohunt</h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  A vibrant and engaging mobile app design for a fitness brand.
+                  2D Top Down Lott Shooter Game / by Unity
                 </p>
               </CardContent>
             </Card>
@@ -165,13 +178,13 @@ export default function Home() {
                 alt="Project 3"
                 className="mx-auto aspect-video overflow-hidden rounded-t-xl object-cover object-center sm:w-full"
                 height="310"
-                src="/placeholder.svg"
+                src="/Pig.jpg"
                 width="550"
               />
               <CardContent className="p-4">
-                <h3 className="text-lg font-bold">Project 3</h3>
+                <h3 className="text-lg font-bold">Grapic Work - Pig Monster</h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  A bold and eye-catching branding design for a luxury fashion label.
+                Creative Modeling that embodies a Pig Monster / by Zbrush
                 </p>
               </CardContent>
             </Card>
@@ -185,7 +198,8 @@ export default function Home() {
           <div className="space-y-3">
             <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">Get in Touch</h2>
             <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              Have a project in mind? Let&apos;s discuss how I can help bring your vision to life.
+            Do you want to work on the project with me? <br />
+            Feel free to contact me anytime.
             </p>
           </div>
           <div className="mx-auto w-full max-w-sm space-y-2">
