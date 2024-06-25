@@ -216,7 +216,7 @@ export default function Home() {
               <Input className="max-w-lg" placeholder="이름" type="text" />
               <Input className="max-w-lg" placeholder="이메일" type="email" />
               <Textarea className="max-w-lg" placeholder="메시지" />
-              <Button className="w-full bg-[#ffd966] text-black hover:bg-[#f1c232]" type="submit">
+              <Button className="w-full bg-[#ffd966] text-black hover:bg-[#f1c232] cursor-not-allowed" type="submit">
                 메시지 보내기
               </Button>
             </form>
