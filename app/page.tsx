@@ -22,7 +22,7 @@ To read more about using these font, please visit the Next.js documentation:
 export default function Home() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
-    <header className="px-4 lg:px-6 h-14 flex items-center bg-gray-900 text-white">
+    <header className="px-4 lg:px-6 h-14 flex items-center bg-[#291a00] text-white">
       <Link className="flex items-center justify-center" href="#">
         <PaletteIcon className="h-6 w-6" />
         <span className="sr-only">정요환의 포트폴리오</span>
@@ -42,7 +42,7 @@ export default function Home() {
         </Link>
       </nav>
     </header>
-    <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gray-900 text-white flex justify-center" id="home">
+    <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-[#473400] text-white flex justify-center" id="home">
       <div className="container px-4 md:px-6">
         <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
           <div className="flex flex-col justify-center space-y-4">
@@ -146,25 +146,28 @@ export default function Home() {
             </div>
           </div>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            <Card>
-              <img
-                alt="Project 1"
-                className="mx-auto aspect-video overflow-hidden rounded-t-xl object-cover object-center sm:w-full"
-                height="310"
-                src="/Eutopiness.PNG"
-                width="550"
+          <Card>
+          <a href="https://jeong_yohwan.artstation.com/projects/g0kaLG">
+            <img
+              alt="Project 1"
+              className="mx-auto aspect-video overflow-hidden rounded-t-xl object-cover object-center sm:w-full transition-transform duration-300 transform hover:scale-105"
+              height="310"
+              src="/Eutopiness.PNG"
+              width="550"
               />
               <CardContent className="p-4">
                 <h3 className="text-lg font-bold">Team Project 1 - Eutopiness</h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                횡 스크롤 퍼즐 아케이드 게임
+                  횡 스크롤 퍼즐 아케이드 게임
                 </p>
-              </CardContent>
+                </CardContent>
+                </a>
             </Card>
             <Card>
+            <a href="https://jeong_yohwan.artstation.com/projects/yDdrmO">
               <img
                 alt="Project 2"
-                className="mx-auto aspect-video overflow-hidden rounded-t-xl object-cover object-center sm:w-full"
+                className="mx-auto aspect-video overflow-hidden rounded-t-xl object-cover object-center sm:w-full transition-transform duration-300 transform hover:scale-105"
                 height="310"
                 src="/Biohunt.jpg"
                 width="550"
@@ -175,11 +178,13 @@ export default function Home() {
                   2D Top Down Lott Shooter Game / by Unity
                 </p>
               </CardContent>
+              </a>
             </Card>
             <Card>
+            <a href="https://jeong_yohwan.artstation.com/projects/BXA859">
               <img
                 alt="Project 3"
-                className="mx-auto aspect-video overflow-hidden rounded-t-xl object-cover object-center sm:w-full"
+                className="mx-auto aspect-video overflow-hidden rounded-t-xl object-cover object-center sm:w-full transition-transform duration-300 transform hover:scale-105"
                 height="310"
                 src="/Pig.jpg"
                 width="550"
@@ -190,6 +195,7 @@ export default function Home() {
                 Pig Monster를 형상화하여 제작한 모델링 / by Zbrush
                 </p>
               </CardContent>
+              </a>
             </Card>
           </div>
         </div>
@@ -210,7 +216,7 @@ export default function Home() {
               <Input className="max-w-lg" placeholder="이름" type="text" />
               <Input className="max-w-lg" placeholder="이메일" type="email" />
               <Textarea className="max-w-lg" placeholder="메시지" />
-              <Button className="w-full" type="submit">
+              <Button className="w-full bg-[#ffd966] text-black hover:bg-[#f1c232]" type="submit">
                 메시지 보내기
               </Button>
             </form>
@@ -218,7 +224,7 @@ export default function Home() {
         </div>
       </div>
     </section>
-    <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-gray-900 text-white">
+    <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-[#291a00] text-white">
       <p className="text-xs">© 2024 정요환. All rights reserved.</p>
       <nav className="sm:ml-auto flex gap-4 sm:gap-6">
         <Link className="text-xs hover:underline underline-offset-4" href="#">
