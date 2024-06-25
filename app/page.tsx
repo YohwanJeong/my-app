@@ -24,11 +24,10 @@ export default function Home() {
     <div className="flex flex-col min-h-[100dvh]">
     <header className="px-4 lg:px-6 h-14 flex items-center bg-[#291a00] text-white">
       <Link className="flex items-center justify-center" href="#">
-        <PaletteIcon className="h-6 w-6" />
-        <span className="sr-only">정요환의 포트폴리오</span>
+      <span className="sr-only">정요환의 포트폴리오</span>
       </Link>
       <nav className="ml-auto flex gap-4 sm:gap-6">
-      <Link className="text-sm font-medium hover:underline underline-offset-4" href="#home">
+      <Link className="text-sm font-medium hover:underline underline-offset-4" href="#">
           홈
         </Link>
         <Link className="text-sm font-medium hover:underline underline-offset-4" href="#about">
@@ -146,11 +145,11 @@ export default function Home() {
             </div>
           </div>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <Card>
-          <a href="https://jeong_yohwan.artstation.com/projects/g0kaLG">
+          <Card className="transition-transform duration-300 transform hover:scale-105">
+          <a href="https://jeong_yohwan.artstation.com/projects/g0kaLG" target="_blank">
             <img
               alt="Project 1"
-              className="mx-auto aspect-video overflow-hidden rounded-t-xl object-cover object-center sm:w-full transition-transform duration-300 transform hover:scale-105"
+              className="mx-auto aspect-video overflow-hidden rounded-t-xl object-cover object-center sm:w-full  "
               height="310"
               src="/Eutopiness.PNG"
               width="550"
@@ -163,11 +162,11 @@ export default function Home() {
                 </CardContent>
                 </a>
             </Card>
-            <Card>
-            <a href="https://jeong_yohwan.artstation.com/projects/yDdrmO">
+            <Card className="transition-transform duration-300 transform hover:scale-105">
+            <a href="https://jeong_yohwan.artstation.com/projects/yDdrmO" target="_blank">
               <img
                 alt="Project 2"
-                className="mx-auto aspect-video overflow-hidden rounded-t-xl object-cover object-center sm:w-full transition-transform duration-300 transform hover:scale-105"
+                className="mx-auto aspect-video overflow-hidden rounded-t-xl object-cover object-center sm:w-full"
                 height="310"
                 src="/Biohunt.jpg"
                 width="550"
@@ -180,11 +179,11 @@ export default function Home() {
               </CardContent>
               </a>
             </Card>
-            <Card>
-            <a href="https://jeong_yohwan.artstation.com/projects/BXA859">
+            <Card className="transition-transform duration-300 transform hover:scale-105">
+              <a href="https://jeong_yohwan.artstation.com/projects/BXA859" target="_blank">
               <img
                 alt="Project 3"
-                className="mx-auto aspect-video overflow-hidden rounded-t-xl object-cover object-center sm:w-full transition-transform duration-300 transform hover:scale-105"
+                className="mx-auto aspect-video overflow-hidden rounded-t-xl object-cover object-center sm:w-full"
                 height="310"
                 src="/Pig.jpg"
                 width="550"
